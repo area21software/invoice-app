@@ -1,0 +1,24 @@
+{
+  "name": "invoice-app-fe",
+  "version": "0.0.1",
+  "description": "Frontend for Invoice App",
+  "source": "./public/index.html",
+  "scripts": {
+    "dev": "parcel"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^18.11.18",
+    "@types/react": "^18.0.27",
+    "@types/react-dom": "^18.0.10",
+    "parcel": "^2.8.3",
+    "process": "^0.11.10",
+    "typescript": "^4.9.5"
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  }
+}
