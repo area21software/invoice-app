@@ -1,5 +1,11 @@
+import Sun from "./assets/svg/icon-sun.svg";
+
 const App = () => {
-  return <div className="mx-2 bg-slate-800 p-2">Hello from App</div>;
+  return (
+    <div className="">
+      <img src={Sun} />
+    </div>
+  );
 };
 
 export default App;
