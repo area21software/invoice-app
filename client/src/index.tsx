@@ -1,9 +1,10 @@
-import { createRoot } from "react-dom/client"
-import App from "./App"
+import { createRoot } from "react-dom/client";
 
-const rootContainer = document.getElementById("root")
-if (!rootContainer) throw Error("No root container!")
+import App from "./App";
 
-const root = createRoot(rootContainer)
+const rootContainer = document.getElementById("root");
+if (!rootContainer) throw Error("No root container!");
 
-root.render(<App />)
+const root = createRoot(rootContainer);
+
+root.render(<App />);
