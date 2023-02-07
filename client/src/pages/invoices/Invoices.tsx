@@ -1,5 +1,5 @@
-import InvoiceHeader from "../../components/invoices/InvoiceHeader";
-import InvoiceList from "../../components/invoices/InvoiceList";
+import { useState } from "react";
+import { InvoiceHeader, InvoiceList } from "../../components/invoices";
 
 const data = [
   {
@@ -73,8 +73,12 @@ const data = [
 ];
 
 const Invoices = () => {
+  const [invoiceData, setInvoiceData] = useState([]);
+
+  // TODO: Make api call to return data
+  //
   return (
-    <div className="mt-8 px-6">
+    <div className="mt-8 max-w-[1300px] px-6 xl:mx-auto xl:mt-16 xl:w-full">
       <InvoiceHeader />
       <InvoiceList invoices={data} />
     </div>

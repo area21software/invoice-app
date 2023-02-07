@@ -31,8 +31,8 @@ const InvoiceCard = ({ invoice }: InvoiceCardProps) => {
   }
 
   return (
-    <div className="mb-4 flex h-36 w-full flex-col justify-between bg-white p-6 dark:bg-ia-darkGrey-400 dark:text-white">
-      <div className="flex justify-between">
+    <div className="mb-4 flex h-36 w-full flex-col justify-between bg-white p-6 dark:bg-ia-darkGrey-400 dark:text-white sm:h-20 sm:flex-row sm:items-center sm:justify-evenly">
+      <div className="flex justify-between sm:flex-grow sm:justify-around">
         <p className="text-sm font-bold">
           <span className="text-sm font-normal text-ia-blueGrey-600">#</span>
           {invoice.id}
@@ -40,8 +40,8 @@ const InvoiceCard = ({ invoice }: InvoiceCardProps) => {
         <p className="text-sm font-thin">{invoice.clientName}</p>
       </div>
 
-      <div className="flex justify-between">
-        <div className="flex flex-col">
+      <div className="sm: flex justify-between sm:flex-grow sm:justify-around">
+        <div className="flex flex-col sm:flex-grow sm:flex-row sm:items-center sm:justify-evenly">
           <p className="text-sm dark:text-ia-blueGrey-400">
             Due {invoice.paymentDue}
           </p>

@@ -9,7 +9,7 @@ const InvoiceList = ({ invoices }: InvoiceListProps) => {
   return (
     <div className="mt-8">
       {invoices.map((invoice) => (
-        <InvoiceCard invoice={invoice} />
+        <InvoiceCard key={invoice.id} invoice={invoice} />
       ))}
     </div>
   );

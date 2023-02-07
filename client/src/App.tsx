@@ -4,7 +4,7 @@ import Invoices from "./pages/invoices/Invoices";
 
 const App = () => {
   return (
-    <div className="h-screen bg-ia-grey-100 dark:bg-ia-darkGrey-900">
+    <div className="flex h-screen flex-col bg-ia-grey-100 dark:bg-ia-darkGrey-900 xl:flex-row">
       <Header />
       <Routes>
         <Route path="/" element={<Invoices />} />
