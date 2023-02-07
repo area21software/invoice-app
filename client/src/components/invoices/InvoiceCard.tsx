@@ -31,7 +31,7 @@ const InvoiceCard = ({ invoice }: InvoiceCardProps) => {
   }
 
   return (
-    <div className="mb-4 flex h-36 w-full flex-col justify-between p-6 dark:bg-ia-darkGrey-400 dark:text-white">
+    <div className="mb-4 flex h-36 w-full flex-col justify-between bg-white p-6 dark:bg-ia-darkGrey-400 dark:text-white">
       <div className="flex justify-between">
         <p className="text-sm font-bold">
           <span className="text-sm font-normal text-ia-blueGrey-600">#</span>
