@@ -1,22 +1,22 @@
 {
-    "name": "invoice-app",
-    "version": "0.0.1",
-    "description": "",
-    "main": "index.js",
-    "scripts": {
-        "dev-server": "npm run dev --prefix server",
-        "dev-client": "npm run dev --prefix client",
-        "dev": "npm run dev-server & npm run dev-client"
-    },
-    "repository": {
-        "type": "git",
-        "url": "git+https://github.com/area21software/invoice-app.git"
-    },
-    "keywords": [],
-    "author": "",
-    "license": "ISC",
-    "bugs": {
-        "url": "https://github.com/area21software/invoice-app/issues"
-    },
-    "homepage": "https://github.com/area21software/invoice-app#readme"
+  "name": "invoice-app",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev-server": "npm run dev --prefix server",
+    "dev-client": "npm run dev --prefix client",
+    "dev": "npm run dev-server & npm run dev-client"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/area21software/invoice-app.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/area21software/invoice-app/issues"
+  },
+  "homepage": "https://github.com/area21software/invoice-app#readme"
 }
