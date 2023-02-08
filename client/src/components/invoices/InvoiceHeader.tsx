@@ -1,13 +1,18 @@
 import ArrowDown from "../../assets/svg/icon-arrow-down.svg";
 import Plus from "../../assets/svg/icon-plus.svg";
+import Invoice from "../../model/Invoice";
 
-const InvoiceHeader = () => {
+type InvoiceHeaderProps = {
+  invoices: Invoice[];
+};
+
+const InvoiceHeader = ({ invoices }: InvoiceHeaderProps) => {
   return (
     <div className="flex items-center">
       <div className="flex flex-col">
         <h1 className="text-xl font-bold dark:text-white">Invoices</h1>
         <p className="text-sm font-thin dark:text-ia-blueGrey-600 ">
-          7 invoices
+          {invoices.length} invoices
         </p>
       </div>
 

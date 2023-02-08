@@ -1,5 +1,9 @@
 import { useState, useEffect } from "react";
-import { InvoiceHeader, InvoiceList } from "../../components/invoices";
+import {
+  InvoiceHeader,
+  InvoiceList,
+  EmptyInvoices,
+} from "../../components/invoices";
 import { apiGetInvoices } from "../../services/invoices/invoiceAPI";
 import Invoice from "../../model/Invoice";
 
@@ -14,12 +18,14 @@ const Invoices = () => {
     getInvoices();
   }, []);
 
-  // TODO: Make api call to return data
-  //
   return (
     <div className="mt-8 max-w-[1300px] px-6 xl:mx-auto xl:mt-16 xl:w-full">
-      <InvoiceHeader />
-      <InvoiceList invoices={invoices} />
+      <InvoiceHeader invoices={invoices} />
+      {invoices.length ? (
+        <InvoiceList invoices={invoices} />
+      ) : (
+        <EmptyInvoices />
+      )}
     </div>
   );
 };
